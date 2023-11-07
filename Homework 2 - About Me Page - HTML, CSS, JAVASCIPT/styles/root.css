@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css");
+
+[theme="light"] {
+    /*
+    --bg-color: #ffffff;
+    --second-bg-color: #f5f5f5;
+    --text-color: #000000;
+    --main-color: #ff0000;
+    */
+
+    --bg-color: green;
+    --second-bg-color: yellow;
+    --third-bg-color: red;
+    --text-color: orange;
+    --icon-color: purple;
+    --main-color: white;
+}
+
+[theme="dark"] {
+    --bg-color: #1a1a1a;
+    --second-bg-color: #333333;
+    --third-bg-color: radial-gradient(circle, #ff0000 0%, #000000 100%);
+    --icon-color: #bcbcbc;
+    --text-color: #ffffff;
+    --main-color: #ff2f00;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: var(--third-bg-color);
+    padding: 2.1rem;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    margin-left: 2.1rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: var(--bg-color);
+    /*
+    overflow: hidden;
+    */
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 8rem;
+    padding: 1.5rem;
+    transition: width 1s ease;
+    border-radius: 1rem;
+    background-color: var(--bg-color);
+    overflow: hidden;
+}

@@ -1,0 +1,103 @@
+main section.portfolio {
+    height: 100%;
+    flex-direction: column;
+}
+
+main section.portfolio * {
+    transition: all 0.2s ease;
+}
+
+main section.portfolio div.p-tab{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+main section.portfolio hr {
+    border: 0.25rem solid var(--second-bg-color);
+    border-radius: 5rem;
+
+    margin-top: 2rem;
+}
+
+main section.portfolio div.p-tab button{
+    cursor: pointer;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0rem 0rem 2rem var(--main-color);
+    font-size: 1.4rem;
+    color: var(--text-color);
+    letter-spacing: .1rem;
+    font-weight: 650;
+    transition: .5s ease;
+    border-color: var(--main-color);
+}
+main section.portfolio div.p-tab button:hover {
+    box-shadow: none;
+}
+main section.portfolio div.p-tab button.active {
+    background: var(--text-color);
+    color: var(--main-color);
+    box-shadow: 0rem 0rem 2rem var(--main-color);
+    border-color: var(--text-color);
+}
+main section.portfolio div.p-tab button.active:hover {
+    box-shadow: none;
+}
+
+
+main section.portfolio div.tabcontent{
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+
+}
+main section.portfolio div.tabcontent > *{
+    margin: 2rem;
+    display: block;
+}
+
+main section.portfolio div.tabcontent h1{
+    text-align: center;
+    color: var(--main-color);
+    font-size: 3rem;
+    margin: 2rem 1rem 2rem 1rem;
+}
+
+main section.portfolio div.tabcontent h3{
+    text-align: center;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    margin: 2rem 1rem 2rem 1rem;
+    border-radius: 1rem;
+    border: 0.5rem solid var(--second-bg-color);
+    background-color: var(--second-bg-color);
+    margin-bottom: 4rem;
+}
+
+
+main section.portfolio div.tabcontent div.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main section.portfolio div.tabcontent div.img img{
+    width: 90rem;
+    height: 45rem;
+    border-radius: 2rem;
+    box-shadow: 0rem 0rem 2rem var(--main-color);
+    transition: .5s ease;
+    cursor: pointer;
+}
+main section.portfolio div.tabcontent div.img img:hover {
+    box-shadow: none;
+    scale: 1.01;
+}

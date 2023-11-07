@@ -1,0 +1,63 @@
+main section.welcome {
+    height: 100%;
+    flex-direction: row;
+}
+
+main section.welcome div.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0rem 15rem 0rem 15rem;
+}
+
+main section.welcome div.image {
+    margin: 10rem 6rem 0rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: welcomeImageAnimation 5s ease infinite;
+}
+
+@keyframes welcomeImageAnimation {
+    0% {
+        transform: scale(1) rotate(-0.5deg) translateY(-1rem);
+    }
+    25% {
+        transform: scale(1.01) rotate(0.5deg) translateY(-3rem);
+    }
+    50% {
+        transform: scale(0.99) rotate(-0.5deg) translateY(-4rem);
+    }
+    75% {
+        transform: scale(1.01) rotate(0.5deg) translateY(-3rem);
+    }
+    100% {
+        transform: scale(1) rotate(-0.5deg) translateY(-1rem);
+    }
+}
+
+main section.welcome div.content h3 {
+    color: var(--text-color);
+    font-size: 4rem;
+    margin: 1rem 0rem 1rem 0rem;
+}
+main section.welcome div.content h3 span.welcome-multiple-text {
+    color: var(--main-color);
+}
+main section.welcome div.content h1 {
+    color: var(--main-color);
+    font-size: 6rem;
+}
+main section.welcome div.content p {
+    color: var(--text-color);
+    font-size: 2rem;
+}
+main section.welcome div.content p::first-letter {
+    color: var(--main-color);
+    font-size: 3rem;
+    padding-right: 1rem;
+}
+main section.welcome div.image img {
+    width: 50rem;
+}

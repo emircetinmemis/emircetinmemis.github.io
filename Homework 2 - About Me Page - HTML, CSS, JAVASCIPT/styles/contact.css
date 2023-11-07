@@ -1,0 +1,55 @@
+main section.contact {
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.submitbtn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--text-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+.submitbtn:hover {
+    box-shadow: none;
+}
+
+
+.contact div.container {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contact div.container .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact div.container .input-box input,
+.contact div.container textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+.contact div.container .input-box input {
+    width: 49%;
+}
+.contact div.container textarea {
+    resize: none;
+}
+.contact div.container .submitbtn {
+    margin-top: 2rem;
+    cursor: pointer;
+}

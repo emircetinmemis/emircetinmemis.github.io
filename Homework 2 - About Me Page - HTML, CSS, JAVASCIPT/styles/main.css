@@ -1,0 +1,24 @@
+main * {
+    transition: all 0.2s ease;
+}
+
+main section {
+    display: none;
+    width: 100%;
+    animation: sectionLoader 1s ease-in-out;
+}
+
+main section:target {
+    display: flex;
+}
+
+@keyframes sectionLoader {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

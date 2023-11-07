@@ -1,0 +1,214 @@
+aside * {
+    transition: all 0.2s ease radial-gradient(circle, rgba(255, 0, 0, 0.99) 0%, #7c0000 50%, #000000 100%);
+}
+
+aside header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+aside header h1 {
+    display: none;
+}
+aside header button.menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--icon-color);
+    background-color: var(--bg-color);
+    border-radius: 25%;
+    border: none;
+    margin-bottom: 2.2rem;
+    padding: 0.5rem;
+    font-size: 3rem;
+}
+aside header button.menu-button:hover {
+    background-color: var(--second-bg-color);
+}
+aside header button.theme-selecter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.6rem;
+    padding: 0.5rem;
+    border-radius: 25%;
+    cursor: pointer;
+    color: var(--icon-color);
+    background-color: var(--bg-color);
+    border: none;
+
+}
+aside header button.theme-selecter:hover {
+    background-color: var(--second-bg-color);
+}
+
+aside hr {
+    border: 0.25rem solid var(--second-bg-color);
+    border-radius: 5rem;
+}
+
+aside nav {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+aside nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    pointer-events: none;
+    padding: 0.5rem;
+    margin-bottom: 3rem;
+}
+aside nav a.active {
+    background-color: var(--main-color);
+    border-radius: 50%;
+}
+aside nav a.active i{
+    color: var(--text-color);
+    pointer-events: none;
+}
+aside nav a i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: all;
+    font-size: 2.6rem;
+    color: var(--icon-color);
+    padding: 0.5rem;
+    border-radius: 25%;
+}
+aside nav a i:hover {
+    background-color: var(--second-bg-color);
+}
+aside nav a span {
+    display: none;
+}
+
+aside footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+aside footer img {
+    width: 8rem;
+    cursor: grab;
+    animation: footerImgAnimation 2s linear infinite;
+}
+@keyframes footerImgAnimation {
+    0% {
+        transform: translateY(-0.5rem);
+    }
+    50% {
+        transform: translateY(0rem);
+    }
+    100% {
+        transform: translateY(-0.5rem);
+    }
+}
+
+aside footer h1 {
+    display: none;
+}
+
+
+
+aside.aside-toggled {
+    width: 20rem;
+}
+
+aside.aside-toggled header {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    
+}
+aside.aside-toggled header h1 {
+    grid-area: h1;
+    display: block;    
+    color: var(--text-color);
+    font-size: 2.5rem;
+    margin: 0rem 0rem 0rem 0rem;
+    text-align: center;
+}
+aside.aside-toggled header h1 span{
+    display: block;
+    color: var(--main-color);
+}
+
+aside.aside-toggled header button.menu-button {
+    grid-area: menu-button;
+
+    margin: 1rem 0rem 0rem 0rem;
+    padding: 0.5rem;
+    font-size: 4rem;
+}
+
+aside.aside-toggled header button.theme-selecter {
+    grid-area: theme-selecter;
+
+    margin: 1rem 0rem 0rem 0rem;
+    padding: 1rem;
+    font-size: 3rem;
+}
+
+aside.aside-toggled hr {
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+aside.aside-toggled nav {
+    margin: 0rem 0rem 0rem 0rem;
+}
+aside.aside-toggled nav a {
+    margin: 0.5rem 0rem 0.5rem 0rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 1rem 0rem 1rem 0rem;
+    pointer-events: all;
+}
+aside.aside-toggled nav a.active {
+    background-color: var(--second-bg-color);
+    border-radius: 5%;
+    pointer-events: none;
+}
+aside.aside-toggled nav a.active i{
+    color: var(--text-color);
+    pointer-events: none;
+}
+aside.aside-toggled nav a:hover {
+    background-color: var(--second-bg-color);
+    border-radius: 5%;
+}
+aside.aside-toggled nav a i {
+    margin: 0rem 1rem 0rem 0rem;
+    pointer-events: none;
+}
+aside.aside-toggled nav a span {
+    display: inline;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    pointer-events: none;
+}
+aside.aside-toggled nav a:nth-child(odd) {
+    color: var(--main-color);
+}
+aside.aside-toggled nav a:nth-child(even) {
+    color: var(--text-color);
+}
+
+aside.aside-toggled footer {
+    margin: 0rem 0rem 0rem 0rem;
+}
+aside.aside-toggled footer img {
+    margin: 0rem;
+    width: 15rem;
+    cursor: grab;
+    animation: footerImgAnimation 2s linear infinite;
+}
