@@ -9,12 +9,12 @@
     --main-color: #ff0000;
     */
 
-    --bg-color: green;
-    --second-bg-color: yellow;
-    --third-bg-color: red;
-    --text-color: orange;
-    --icon-color: purple;
-    --main-color: white;
+    --bg-color: #ffffff;
+    --second-bg-color: rgb(164, 164, 164);
+    --third-bg-color: radial-gradient(circle, #70313137 0%, #2e242457 100%);
+    --text-color: rgb(0, 0, 0);
+    --icon-color: rgb(0, 0, 0);
+    --main-color: rgb(248, 0, 0);
 }
 
 [theme="dark"] {
